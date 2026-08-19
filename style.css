@@ -35,8 +35,9 @@ img.logo {
     color: var(--outro);
      font-family: "Lobster", sans-serif;
     text-align: center;
-    font-size: 2em;
+    font-size: clamp(3vw, 3.25, 3.5vw);
 }
+
 /*FUNÇÕES REAIS DO HEADER*/
 nav.nav-bar {
     min-height: 70px;
@@ -54,16 +55,22 @@ ul.nav-list {
     list-style: none;
 }
 
-/*LINKS DA BARRA DE NAVEGAÇÃO*/
-a.link {
-    text-decoration: none;
-    color: var(--outro);
-    font-size: 1.1em;
+.hero {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url('https://static.vecteezy.com/ti/fotos-gratis/t2/28133374-escola-sala-de-aula-dentro-borrao-fundo-sem-jovem-estudante-embacado-visao-do-elementar-classe-quarto-nao-crianca-ou-professor-com-cadeiras-e-mesas-dentro-campus-costas-para-escola-conceito-generativo-ai-foto.jpg');
+    height: 400px;
+    padding-top: 50px;
 }
 
-/*EFEITO DOS LINKS DA BARRA DE NAVEGAÇÃO*/
-a.link:hover {
-    font-size: 1.2em;
-    color: white;
-    transform: scale(1.05);
+.hero main {
+    border-radius: 10px;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.459);
+    margin: 0 auto 2vw auto;
+    width: 100%;
+    min-width: 300px;
+    max-width: 800px;
+    height: 30vh;
+    background-color: white;
 }
